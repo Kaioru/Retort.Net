@@ -1,9 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Retort.Core", "Retort.Core\Retort.Core.csproj", "{8325EFFA-B455-4D1D-8749-8D6872F3AFCC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A47F35A-5D4C-49EF-A63A-F613599B92BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Retort.Core", "src\Retort.Core\Retort.Core.csproj", "{8325EFFA-B455-4D1D-8749-8D6872F3AFCC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F411AC54-CA1F-4F84-9F29-54908DE0E2DE}"
 EndProject
