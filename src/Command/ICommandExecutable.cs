@@ -7,6 +7,6 @@ namespace Retort.Core
 	{
 
 		void Execute(List<String> args);
-		
+
 	}
 }

@@ -8,28 +8,32 @@ namespace Retort.Core
 {
 	public class CommandUtil
 	{
-
-		public static List<String> GetArgs(String text) {
+		
+		public static List<String> GetArgs(String text)
+		{
 			Regex regex = new Regex("([\"'])(?:(?=(\\\\?))\\2.)*?\\1|([^\\s]+)");
 			List<String> args = regex.Matches(text)
 				.Cast<Match>()
 				.Select(m => m.Value)
-	                     	.ToList();
+							 .ToList();
 			return args;
 		}
 
-		public static MethodInfo GetMethod(Type type, String name, int paramsCount) {
-			return type.GetMethods()
+		public static MethodInfo GetMethod(Type type, String name, int paramsCount)
+		{
+			return type.GetRuntimeMethods()
 					.Where(m => m.Name == name)
 					.Where(m => m.GetParameters().Length == paramsCount)
-				       	.First();
+						   .First();
 		}
 
-		public static void ExecuteCommand(ICommand command, String text, params Object[] parameters) {
+		public static void ExecuteCommand(ICommand command, String text, params Object[] parameters)
+		{
 			ExecuteCommand(command, GetArgs(text), parameters);
 		}
 
-		public static void ExecuteCommand(ICommand command, List<String> args, params Object[] parameters) {
+		public static void ExecuteCommand(ICommand command, List<String> args, params Object[] parameters)
+		{
 			if (args.Count > 0)
 			{
 				String first = args[0];

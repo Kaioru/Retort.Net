@@ -5,7 +5,7 @@ namespace Retort.Core
 {
 	public interface ICommand : ICommandExecutable
 	{
-		
+
 		String Name { get; }
 
 		String Desc { get; }
