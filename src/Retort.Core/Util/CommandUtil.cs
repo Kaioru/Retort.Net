@@ -25,11 +25,11 @@ namespace Retort.Core
 				       	.First();
 		}
 
-		public static void ExecuteCommand(ICommand command, String text, Object[] parameters) {
+		public static void ExecuteCommand(ICommand command, String text, params Object[] parameters) {
 			ExecuteCommand(command, GetArgs(text), parameters);
 		}
 
-		public static void ExecuteCommand(ICommand command, List<String> args, Object[] parameters) {
+		public static void ExecuteCommand(ICommand command, List<String> args, params Object[] parameters) {
 			if (args.Count > 0)
 			{
 				String first = args[0];

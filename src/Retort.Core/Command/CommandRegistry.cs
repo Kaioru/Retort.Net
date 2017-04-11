@@ -5,6 +5,7 @@ namespace Retort.Core
 {
 	public class CommandRegistry : Command
 	{
+		
 		public override string Name => "registry";
 
 		public override string Desc => "The default registry";

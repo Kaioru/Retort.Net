@@ -35,7 +35,7 @@
     <Compile Include="PingCommand.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Retort.Core\Retort.Core.csproj">
+    <ProjectReference Include="..\..\src\Retort.Core\Retort.Core.csproj">
       <Project>{8325EFFA-B455-4D1D-8749-8D6872F3AFCC}</Project>
       <Name>Retort.Core</Name>
     </ProjectReference>

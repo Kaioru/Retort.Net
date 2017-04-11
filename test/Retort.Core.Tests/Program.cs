@@ -11,7 +11,7 @@ namespace Retort.Core.Tests
 
 			registry.RegisterCommand(command);
 
-			CommandUtil.ExecuteCommand(registry, "p", new Object[0]);
+			CommandUtil.ExecuteCommand(registry, "ping");
 		}
 	}
 }
